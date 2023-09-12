@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script type="module" src="./scripts/script.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <div class="display">
+            <input type="text" id="dispNum" readonly />
+            <input type="text" id="dispOp" readonly />
+            <textarea  id="history" readonly></textarea>
+        </div>
+        <div class="div-buttons">
+            <div class="left">
+                <div class="erase-row">
+                    <button id="clear">C</button>
+                    <button id="clear-entry">CE</button>
+                    <button id="erase">&larr;</button>
+                </div>
+                <div class="numbers">
+                    <div class="row">
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                    </div>
+                    <div class="row">
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                    </div>
+                    <div class="row">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+                    <div class="row">
+                        <button>0</button>
+                        <button id="float">.</button>
+                        <button id="sign">+/-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="operators">
+                    <button>+</button>
+                    <button>-</button>
+                    <button>x</button>
+                    <button>/</button>
+                </div>
+                <button id="result">=</button>
+            </div> 
+        </div>
+               
+    </div>
+    <div class="shortcuts">
+        <h1>Keyboard shortcuts</h1>
+        <h3>Equal (=)</h3>
+        <p>Enter</p>
+        <h3>Clear (C)</h3>
+        <p>Escape</p>
+        <h3>Clear Entry (CE)</h3>
+        <p>Delete</p>
+        <h3>Erase (&larr;)</h3>
+        <p>Backspace</p>
+        <h3>Sign (+/-)</h3>
+        <p>Shift</p>
+        <h3>Scroll up - down</h3>
+        <p>Arrow up - down</p>
+    </div>
+</body>
+</html>
